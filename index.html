@@ -1,12 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Global Currency Convertor</h1>
+      <form action="">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="number" name="" id="" value="'100" />
+        </div>
+
+        <div class="dropdown">
+          <div class="from">
+            <p>From</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/IN/shiny/64.png" />
+              <select name="from" id="" class="from">
+                <option value="inr">INR</option>
+                <option value="usd">USD</option>
+                <option value="npr">NPR</option>
+                <option value="pkr">PKR</option>
+                <option value="bt">BT</option>
+              </select>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-right-left"></i>
+
+          <div class="to">
+            <p>To</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/US/shiny/64.png" />
+              <select name="to" id="" class="to">
+                <option value="inr">INR</option>
+                <option value="usd" selected>USD</option>
+                <option value="npr">NPR</option>
+                <option value="pkr">PKR</option>
+                <option value="bt">BT</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="msg">1USD = 90INR</div>
+        <button>Get Exchange Value</button>
+      </form>
+    </div>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
